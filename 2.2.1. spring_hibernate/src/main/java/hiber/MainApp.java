@@ -27,6 +27,9 @@ public class MainApp {
          System.out.println();
       }
 
+      User searchUser = userService.searchUser("Tesla", 11);
+      System.out.println(searchUser.getFirstName());
+
       context.close();
    }
 }
